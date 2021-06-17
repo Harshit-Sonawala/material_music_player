@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './track_card.dart';
 
 class TrackList extends StatefulWidget {
   @override
@@ -9,14 +10,9 @@ class _TrackListState extends State<TrackList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 4,
+      itemCount: 10,
       itemBuilder: (context, index) {
-        return Card(
-          child: Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text('Track Title'),
-          ),
-        );
+        return TrackCard();
       }
     );
   }
